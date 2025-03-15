@@ -11,7 +11,7 @@ body {
   color: #333;
 }
 
-/* 標題與主容器樣式 */
+/* æ¨™é¡Œèˆ‡ä¸»å®¹å™¨æ¨£å¼ */
 h1 {
   font-size: 1.75rem;
   font-weight: 700;
@@ -26,7 +26,7 @@ h1 {
   padding: 1.5rem;
 }
 
-/* 量子視覺化主區域 */
+/* é‡å­è¦–è¦ºåŒ–ä¸»å€åŸŸ */
 .visualization-container {
   border: 1px solid #e5e7eb;
   border-radius: 0.5rem;
@@ -35,7 +35,7 @@ h1 {
   box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
 }
 
-/* 狀態面板樣式 */
+/* ç‹€æ…‹é¢æ¿æ¨£å¼ */
 .status-panel {
   padding: 1.25rem;
   background-color: #fff;
@@ -61,7 +61,7 @@ h1 {
   animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
 }
 
-/* 統計數據區域 */
+/* çµ±è¨ˆæ•¸æ“šå€åŸŸ */
 .stats-container {
   display: flex;
   justify-content: space-between;
@@ -92,7 +92,7 @@ h1 {
   color: #3b82f6;
 }
 
-/* 進度條樣式 */
+/* é€²åº¦æ¢æ¨£å¼ */
 .progress-bar {
   height: 0.75rem;
   width: 100%;
@@ -121,7 +121,7 @@ h1 {
   background-color: #3b82f6;
 }
 
-/* 畫布容器 */
+/* ç•«å¸ƒå®¹å™¨ */
 .canvas-container {
   width: 100%;
   height: 500px;
@@ -133,7 +133,7 @@ h1 {
   overflow: hidden;
 }
 
-/* 代理節點樣式 */
+/* ä»£ç†ç¯€é»žæ¨£å¼ */
 .agent {
   position: absolute;
   width: 16px;
@@ -179,7 +179,7 @@ h1 {
 }
 
 .agent-influencer::before {
-  content: '★';
+  content: 'â˜…';
   position: absolute;
   top: 50%;
   left: 50%;
@@ -188,7 +188,7 @@ h1 {
   font-size: 10px;
 }
 
-/* 量子連接線 */
+/* é‡å­é€£æŽ¥ç·š */
 .quantum-connection {
   position: absolute;
   height: 2px;
@@ -198,7 +198,7 @@ h1 {
   opacity: 0.6;
 }
 
-/* 控制面板 */
+/* æŽ§åˆ¶é¢æ¿ */
 .controls-panel {
   display: flex;
   justify-content: center;
@@ -269,7 +269,7 @@ h1 {
   opacity: 0.9;
 }
 
-/* 動畫效果 */
+/* å‹•ç•«æ•ˆæžœ */
 @keyframes pulse {
   0%, 100% {
     opacity: 1;
@@ -299,7 +299,7 @@ h1 {
   }
 }
 
-/* 量子疊加狀態視覺效果 */
+/* é‡å­ç–ŠåŠ ç‹€æ…‹è¦–è¦ºæ•ˆæžœ */
 .quantum-superposition {
   position: absolute;
   width: 100%;
@@ -330,7 +330,7 @@ h1 {
   }
 }
 
-/* 反應式設計 */
+/* åæ‡‰å¼è¨­è¨ˆ */
 @media (max-width: 768px) {
   .controls-panel {
     flex-direction: column;
@@ -347,7 +347,7 @@ h1 {
   }
 }
 
-/* 為符合附圖的特定樣式補充 */
+/* ç‚ºç¬¦åˆé™„åœ–çš„ç‰¹å®šæ¨£å¼è£œå…… */
 .status-panel-header {
   background-color: #f9fafb;
   padding: 1rem;
@@ -372,7 +372,7 @@ h1 {
   background-color: #f3f4f6;
 }
 
-/* 保留必要的 Tailwind 兼容類 */
+/* ä¿ç•™å¿…è¦çš„ Tailwind å…¼å®¹é¡ž */
 .p-4 {
   padding: 1rem;
 }
@@ -410,7 +410,7 @@ h1 {
   box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
 }
 
-/* 其他必要的功能類 */
+/* å…¶ä»–å¿…è¦çš„åŠŸèƒ½é¡ž */
 .from-red-500 {
   --tw-gradient-from: #ef4444;
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(239, 68, 68, 0));
