@@ -10,7 +10,7 @@ body {
   background-color: #f3f4f6;
 }
 
-/* Tailwind CSS 核心類 */
+/* Tailwind CSS æ ¸å¿ƒé¡ž */
 .p-4 {
   padding: 1rem;
 }
@@ -209,10 +209,6 @@ body {
   background-color: #dbeafe;
 }
 
-.lg\:w-1\/4 {
-  width: 25%;
-}
-
 .bg-yellow-100 {
   background-color: #fef3c7;
 }
@@ -292,17 +288,6 @@ body {
 
 .font-semibold {
   font-weight: 600;
-}
-
-/* 響應式設計 */
-@media (min-width: 1024px) {
-  .lg\:w-3\/4 {
-    width: 75%;
-  }
-  
-  .lg\:w-1\/4 {
-    width: 25%;
-  }
 }
 
 .from-red-500 {
@@ -421,10 +406,6 @@ body {
   flex-wrap: wrap;
 }
 
-.lg\:w-3\/4 {
-  width: 75%;
-}
-
 .p-2 {
   padding: 0.5rem;
 }
@@ -505,4 +486,87 @@ body {
 .hover\:from-red-700:hover {
   --tw-gradient-from: #be185d;
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(190, 24, 93, 0));
+}
+
+/* æ–°å¢ž: ä¸‰å€å¡Šä½ˆå±€çµæ§‹ */
+.layout-container {
+  display: grid;
+  grid-template-columns: 2fr 1fr; /* å·¦å³å…©æ¬„, å·¦æ¬„2/3, å³æ¬„1/3 */
+  grid-template-rows: auto 1fr; /* å·¦æ¬„åˆ†ç‚ºä¸Šä¸‹å…©éƒ¨åˆ† */
+  grid-template-areas: 
+    "opinion quantum"
+    "system quantum";
+  gap: 1rem;
+  height: 100vh;
+  padding: 1rem;
+}
+
+/* å·¦ä¸Š: æ­£å‘è² å‘è§€é»žèˆ‡è³‡è¨Š */
+.opinion-panel {
+  grid-area: opinion;
+  background-color: #ffffff;
+  border-radius: 0.25rem;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  overflow: auto;
+}
+
+/* å·¦ä¸‹: ç³»çµ±ç‹€æ…‹èªªæ˜Ž */
+.system-panel {
+  grid-area: system;
+  background-color: #ffffff;
+  border-radius: 0.25rem;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  overflow: auto;
+}
+
+/* å³æ¬„: é‡å­ç›®å‰å‹•æ…‹ */
+.quantum-panel {
+  grid-area: quantum;
+  background-color: #ffffff;
+  border-radius: 0.25rem;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+/* ç¢ºä¿ canvas èƒ½å¤ æ­£ç¢ºé¡¯ç¤º */
+.canvas-container {
+  flex: 1;
+  width: 100%;
+  overflow: hidden;
+}
+
+canvas {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+/* æŒ‰éˆ•ç¾¤çµ„æ¨£å¼ */
+.button-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+  justify-content: center;
+}
+
+/* éŸ¿æ‡‰å¼èª¿æ•´ */
+@media (max-width: 1024px) {
+  .layout-container {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto 1fr;
+    grid-template-areas: 
+      "opinion"
+      "system"
+      "quantum";
+  }
+  
+  .quantum-panel {
+    height: 500px;
+  }
 }
