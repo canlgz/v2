@@ -303,7 +303,10 @@ body {
   .lg\:w-1\/4 {
     width: 25%;
   }
-} #ef4444;
+}
+
+.from-red-500 {
+  --tw-gradient-from: #ef4444;
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(239, 68, 68, 0));
 }
 
@@ -500,4 +503,6 @@ body {
 }
 
 .hover\:from-red-700:hover {
-  --tw-gradient-from:
+  --tw-gradient-from: #be185d;
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(190, 24, 93, 0));
+}
